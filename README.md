@@ -64,4 +64,3 @@ open ToDoApp.xcworkspace
 3. Profil fotoğrafı ekleyin
 4. Görevlerinizi ekleyin ve yönetin
 
-Proje Linki: [https://github.com/your-username/ToDoApp](https://github.com/your-username/ToDoApp)
