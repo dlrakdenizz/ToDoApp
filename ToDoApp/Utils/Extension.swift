@@ -1,0 +1,41 @@
+//
+//  Extension.swift
+//  ToDoApp
+//
+//  Created by Dilara Akdeniz on 29.04.2025.
+//
+
+//
+//  Extension.swift
+//  TodoApp
+//
+//  Created by hakkı can şengönül on 1.01.2023.
+//
+
+import UIKit
+import JGProgressHUD
+extension UIViewController{
+    func backgroundGradientColor(){
+        let gradient = CAGradientLayer()
+        gradient.colors = [UIColor.systemCyan.cgColor, UIColor.systemMint.cgColor]
+        gradient.locations = [0,1]
+        gradient.frame = view.bounds
+        view.layer.addSublayer(gradient)
+    }
+    func showHud(show: Bool){
+        view.endEditing(true) //Ekranda açık olan bir şey varsa kapattık
+        let jgProgressHud = JGProgressHUD(style: .dark)
+        jgProgressHud.textLabel.text = "Loading"
+        jgProgressHud.detailTextLabel.text = "Please Wait"
+        if show{
+            jgProgressHud.show(in: view)
+        }else{
+            jgProgressHud.dismiss(animated: true)
+        }
+    }
+    
+}
+extension UIColor{
+    static let mainColor = UIColor.systemBlue.withAlphaComponent(0.7)
+}
+

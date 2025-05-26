@@ -1,0 +1,14 @@
+# Firebase config
+GoogleService-Info.plist
+
+# Xcode çalışma dosyaları
+*.xcworkspace
+xcuserdata/
+DerivedData/
+
+# macOS
+.DS_Store
+
+# Ortam dosyaları (eğer varsa)
+.env
+
